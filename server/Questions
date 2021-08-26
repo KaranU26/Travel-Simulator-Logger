@@ -1,0 +1,23 @@
+1. Rsyslog is called the rocket fast system for log processing. Its got high performance, great security, and modular design. It is said to be the swiss army knife of logging where it can accept the input from a variety of sources. Some features include, filtering any part of syslog messages, full configurable output format, and also supports multi threading. 
+
+Syslog stands for system logging protocol. It is a standard protocol used to send system logs to servers. It is mainly used to to get logs from multiple machines, and monitor them. 
+
+Our loggers are not that complex compared to what syslog and rsyslog are. But our loggers do use some of the most basic features that these loggers actually use. This will cause an overlap of information.
+
+2. a) ability to formaty log messages using unix
+   b) logging directly into the database
+   c) message flow control support in network transporting
+   d)Sending log messages to local apps
+   e)ability to correlate mutple messages that form a complex event.
+   
+3. a) It has content based filtering
+   b) it has TCP for transporting
+   c) it has TLS encryption
+   d) you can log directly into the database
+   e)It has buffered operation support
+   
+4. We would have to make it similar to the example shown in class with the radios, you would have an array or clients with IPs and ports. The server would have to be able top handle all the incoming data by most probably using semaphores, and making each client go one by one. 
+
+5. One way the user could do it is by using syslog-ng which contains many features that could handle this type of logging. Another way is to accept all the large amount of data and essentially loop through it to extract it all into its parts. The third way is that the user could use executive commands such as grep to find certain patterns that the user is using and filter the logs that way.
+
+6. You can use the GDB thread debugging facility which essentially allows you to observe all the threads as your program is running. Certain commands would show information about the threads. This is especially useful in programs that have many threads to differentiate between them and see the details. This would be useful in debugging a program as it will provide you with useful information to help you solve certain issues. 
